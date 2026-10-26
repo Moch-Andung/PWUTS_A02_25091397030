@@ -32,4 +32,4 @@ Tab Info Kamar dan Keluhan Saya, badge hitungan status, filter status, detail ke
 Gunakan VS Code + extension Live Server (klik kanan `index.html` lalu Open with Live Server).
 
 ## Catatan
-Asumsi: batas foto 2 MB, deskripsi minimal 10 karakter, endpoint uji httpbin.org.
+Data ini hanya berupa contoh untuk kebutuhan UTS, Asumsi: batas foto 2 MB, deskripsi minimal 10 karakter, endpoint uji httpbin.org.
