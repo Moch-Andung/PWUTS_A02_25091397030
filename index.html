@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kos Abah - Portal Penghuni</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button id="btn-menu" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="sidebar">&#9776;</button>
+  <div id="overlay"></div>
+
+  <aside id="sidebar">
+    <a class="brand" href="#" data-page="beranda">
+      <img src="img/galeri-4.jpg" alt="Logo Kos Abah" width="44" height="44">
+      <span>Kos Abah<small>Portal penghuni</small></span>
+    </a>
+    <nav aria-label="Menu utama">
+      <a href="#" class="menu aktif" data-page="beranda" aria-current="page">Beranda</a>
+      <a href="#" class="menu" data-page="halaman/kamar-saya.html" data-init="initKamarSaya">Kamar Saya</a>
+      <a href="#" class="menu" data-page="halaman/keluhan.html" data-init="initKeluhan">Ajukan Keluhan</a>
+    </nav>
+    <p class="side-foot">Jl. Ketintang No. 12, Surabaya<br>0812-3456-7890</p>
+  </aside>
+
+  <main id="isi">
+    <!-- Beranda (2.a) -->
+    <div id="beranda">
+      <header class="hero">
+        <h1>Selamat datang di Kos Abah</h1>
+        <p>Kos putra dan putri dijamin nyaman dan bersih, deket kampus lagih masa nggak mau sih. Lihat kamar dan laporkan keluhan Anda langsung dari sini.</p>
+      </header>
+
+      <section class="blok" aria-labelledby="h-profil">
+        <h2 id="h-profil">Profil kos</h2>
+        <p>Kos Abah dikelola langsung oleh pemiliknya dan dihuni oleh mahasiswa serta pekerja. Untuk biaya sewa dibayar setiap bulan dan jika terdapat keluhan atau masalah pada kamar atau fasilitas, anda dapar melapor ke pimilik.</p>
+        <dl class="kontak">
+          <div><dt>Alamat</dt><dd>Jl. Ketintang No. 12, Surabaya</dd></div>
+          <div><dt>Pemilik</dt><dd>Bapak Abah</dd></div>
+          <div><dt>Telepon</dt><dd>0812-3456-7890</dd></div>
+        </dl>
+      </section>
+
+      <section class="blok" aria-labelledby="h-galeri">
+        <h2 id="h-galeri">Galeri kos</h2>
+        <p class="bantu">Klik foto untuk memperbesar.</p>
+        <div class="galeri">
+          <a href="img/galeri-1.webp" data-alt="Tampak depan Kos Abah"><img src="img/galeri-1.webp" alt="Tampak depan Kos Abah"></a>
+          <a href="img/galeri-2.jpg" data-alt="Kamar tidur"><img src="img/galeri-2.jpg" alt="Kamar tidur"></a>
+          <a href="img/galeri-3.jpg" data-alt="Kamar mandi dalam"><img src="img/galeri-3.jpg" alt="Kamar mandi dalam"></a>
+        </div>
+      </section>
+
+      <section class="blok" aria-labelledby="h-fasilitas">
+        <h2 id="h-fasilitas">Fasilitas umum</h2>
+        <ul class="fasilitas">
+          <li><strong>Dapur bersama</strong>Kompor dan peralatan dasar tersedia.</li>
+          <li><strong>Area parkir</strong>Motor dan sepeda, di dalam pagar.</li>
+          <li><strong>WiFi</strong>Tersedia di seluruh area kos.</li>
+          <li><strong>Ruang jemur</strong>Di lantai atas, terbuka.</li>
+          <li><strong>Ruang tamu</strong>Untuk menerima tamu sampai pukul 21.00 (boleh lebih jika mendesak & sudah izin).</li>
+          <li><strong>Air bersih</strong>Tersedia 24 jam.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Tempat halaman 2.b dan 2.c dimuat lewat Ajax -->
+    <div id="konten" hidden aria-live="polite"></div>
+
+    <footer>&copy; 2026 Kos Abah.</footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/kamar-saya.js"></script>
+  <script src="js/keluhan.js"></script>
+</body>
+</html>

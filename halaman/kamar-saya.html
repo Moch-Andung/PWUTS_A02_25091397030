@@ -1,0 +1,36 @@
+<section class="halaman" aria-labelledby="jdl-kamar">
+  <h1 id="jdl-kamar">Kamar Saya</h1>
+
+  <div class="tab-bar" role="tablist" aria-label="Kamar dan keluhan">
+    <button type="button" class="tab aktif" role="tab" id="tab-info" aria-selected="true" aria-controls="panel-info" data-tab="info">Info Kamar</button>
+    <button type="button" class="tab" role="tab" id="tab-keluhan" aria-selected="false" aria-controls="panel-keluhan" data-tab="keluhan">Keluhan Saya <span class="jumlah" id="jml-total">0</span></button>
+  </div>
+
+  <div id="panel-info" role="tabpanel" aria-labelledby="tab-info">
+    <div class="kartu-kamar">
+      <img src="img/galeri-2.jpg" alt="Foto kamar">
+      <div>
+        <h2 id="kk-nomor"></h2>
+        <p class="tipe" id="kk-tipe"></p>
+        <dl class="kontak">
+          <div><dt>Penghuni</dt><dd id="kk-nama"></dd></div>
+          <div><dt>Tanggal masuk</dt><dd id="kk-masuk"></dd></div>
+          <div><dt>Harga sewa</dt><dd id="kk-harga"></dd></div>
+        </dl>
+        <h3>Fasilitas kamar</h3>
+        <ul class="chip-list" id="kk-fasilitas"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="panel-keluhan" role="tabpanel" aria-labelledby="tab-keluhan" hidden>
+    <div class="filter-bar" role="group" aria-label="Filter status keluhan">
+      <button type="button" class="chip aktif" data-status="Semua">Semua <span class="jumlah" id="jml-semua">0</span></button>
+      <button type="button" class="chip" data-status="Baru">Baru <span class="jumlah" id="jml-baru">0</span></button>
+      <button type="button" class="chip" data-status="Diproses">Diproses <span class="jumlah" id="jml-diproses">0</span></button>
+      <button type="button" class="chip" data-status="Selesai">Selesai <span class="jumlah" id="jml-selesai">0</span></button>
+    </div>
+    <ul id="daftar-keluhan" class="daftar"></ul>
+    <p id="kosong" class="kosong" hidden>Belum ada keluhan dengan status ini. Gunakan menu Ajukan Keluhan untuk membuat laporan.</p>
+  </div>
+</section>

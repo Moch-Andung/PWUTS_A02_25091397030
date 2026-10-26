@@ -1,0 +1,42 @@
+<section class="halaman" aria-labelledby="jdl-keluhan">
+  <h1 id="jdl-keluhan">Ajukan Keluhan</h1>
+  <p class="bantu">Ceritakan masalah di kamar atau fasilitas kos. Pemilik akan menanggapi laporan Anda.</p>
+
+  <form id="form-keluhan" novalidate>
+    <div class="field">
+      <label for="kategori">Kategori</label>
+      <select id="kategori" name="kategori">
+        <option value="">Pilih kategori</option>
+        <option value="Listrik">Listrik</option>
+        <option value="Air">Air</option>
+        <option value="Kebersihan">Kebersihan</option>
+        <option value="Lainnya">Lainnya</option>
+      </select>
+      <p class="err" id="err-kategori" role="alert"></p>
+    </div>
+
+    <div class="field">
+      <label for="deskripsi">Deskripsi keluhan</label>
+      <textarea id="deskripsi" name="deskripsi" rows="5" placeholder="Contoh: Lampu kamar mandi mati sejak kemarin malam."></textarea>
+      <p class="hitung"><span id="hitung">0</span> / 500 karakter (minimal 10)</p>
+      <p class="err" id="err-deskripsi" role="alert"></p>
+    </div>
+
+    <div class="field">
+      <label for="foto">Foto pendukung <span class="opsional">(opsional)</span></label>
+      <input type="file" id="foto" name="foto" accept="image/png,image/jpeg">
+      <p class="bantu">JPG atau PNG, maksimal 2 MB.</p>
+      <img id="pratinjau" alt="Pratinjau foto" hidden>
+      <p class="err" id="err-foto" role="alert"></p>
+    </div>
+
+    <dl class="otomatis">
+      <div><dt>Tanggal lapor</dt><dd id="tgl-lapor"></dd></div>
+      <div><dt>Status</dt><dd>Baru</dd></div>
+    </dl>
+    <p class="bantu">Tanggal dan status diisi otomatis oleh sistem.</p>
+
+    <button type="submit" class="tombol" id="btn-kirim">Kirim keluhan</button>
+    <div id="hasil" class="hasil" role="status" hidden></div>
+  </form>
+</section>

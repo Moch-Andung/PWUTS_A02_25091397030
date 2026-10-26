@@ -1,0 +1,6 @@
+[
+  {"id":"K-003","kategori":"Air","deskripsi":"Keran wastafel di kamar mandi dalam menetes terus dan air tidak mengalir deras.","status":"Diproses","tanggapan":"Tukang ledeng dijadwalkan datang Sabtu pagi. Mohon kamar tidak dikunci.","tgl_lapor":"2026-10-20","tgl_selesai":null},
+  {"id":"K-002","kategori":"Listrik","deskripsi":"Stop kontak dekat meja belajar tidak ada arusnya sejak pagi.","status":"Selesai","tanggapan":"Kabel stop kontak sudah diganti. Silakan dicoba kembali.","tgl_lapor":"2026-10-05","tgl_selesai":"2026-10-07"},
+  {"id":"K-001","kategori":"Kebersihan","deskripsi":"Tempat sampah di lorong lantai 1 belum diangkut dan mulai berbau.","status":"Selesai","tanggapan":"Petugas kebersihan sudah mengangkut sampah. Jadwal angkut ditambah menjadi 3 kali seminggu.","tgl_lapor":"2026-09-18","tgl_selesai":"2026-09-19"},
+  {"id":"K-004","kategori":"Lainnya","deskripsi":"Jendela kamar sulit ditutup rapat karena engselnya longgar.","status":"Baru","tanggapan":null,"tgl_lapor":"2026-10-24","tgl_selesai":null}
+]
